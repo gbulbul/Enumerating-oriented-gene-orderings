@@ -6,9 +6,9 @@ Created on Wed Jul 10 21:23:03 2024
 """
 
 class possible_pairing:
-        def obtaining_values(): #make a list of signed values which are up to 2.
+        def obtaining_values(k): #make a list of signed values which are up to (k-1).
             list_of_values=[]
-            for i in range(1,3):
+            for i in range(1,k):
                 list_of_values.append(-1*i)
                 list_of_values.append(+1*i)
             return list_of_values
@@ -21,5 +21,5 @@ class possible_pairing:
                      print(ele1,ele2)
           print(f'{i} is the number of the possible pairs which are allowed!')      
 if __name__=="__main__":
-    list_of_values=possible_pairing.obtaining_values()
+    list_of_values=possible_pairing.obtaining_values(k=3) #2 (k-1) is suggested for this program!
     possible_pairing.pairing(list_of_values)
