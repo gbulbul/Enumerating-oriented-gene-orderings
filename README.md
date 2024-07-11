@@ -1,0 +1,1 @@
+When a + integer is given, this program is able to produce possible pairs which include signed permutations. For example, '2' is given and this program starts obtaining a list of values which are signed values up to the given number. Then, it can produce possible pairs.
